@@ -1,0 +1,81 @@
+body,
+html {
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000000;
+  transition: background-color 3s ease;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#score-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+#score {
+  color: #fff;
+  font-size: 24px;
+}
+
+#high-score {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  color: #fff;
+  font-size: 24px;
+  z-index: 1;
+}
+
+#high-score-badge {
+  margin-left: 10px;
+  background-color: #ff0;
+  color: #000;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.hidden {
+  display: none;
+}
+
+#game-board {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  background-color: #fff;
+  border: 1px solid #333;
+}
+
+.snake {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #0f0;
+}
+
+.food {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #f00;
+}
